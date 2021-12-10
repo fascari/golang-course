@@ -13,6 +13,16 @@ func main() {
 		i++
 	}
 
+	i = 0
+	for { // não tem while em Go
+		fmt.Printf("%d ", i)
+		i++
+		if i == 5 {
+			fmt.Println("\nParou!!!")
+			break
+		}
+	}
+
 	for i := 0; i <= 20; i += 2 {
 		fmt.Printf("%d ", i)
 	}
