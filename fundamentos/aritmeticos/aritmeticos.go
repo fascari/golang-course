@@ -20,7 +20,7 @@ func main() {
 	fmt.Println("Ou =>", a|b)  // 11 | 10 = 11
 	fmt.Println("Xor =>", a^b) // 11 ^ 10 = 01
 
-	c := 3.0
+	c := 4.0
 	d := 2.0
 
 	// outras operacoes usando math...
