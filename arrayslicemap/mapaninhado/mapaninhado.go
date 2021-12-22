@@ -20,5 +20,8 @@ func main() {
 
 	for letra, funcs := range funcsPorLetra {
 		fmt.Println(letra, funcs)
+		for nome, valor := range funcs {
+			fmt.Println(nome, valor)
+		}
 	}
 }
