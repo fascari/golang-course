@@ -12,6 +12,10 @@ type ferrari struct {
 	velocidadeAtual int
 }
 
+func (f *ferrari) SetVelocidadeAtual(velocidadeAtual int) {
+	f.velocidadeAtual = velocidadeAtual
+}
+
 func (f *ferrari) ligarTurbo() {
 	f.turboLigado = true
 }
@@ -19,6 +23,7 @@ func (f *ferrari) ligarTurbo() {
 func main() {
 	carro1 := ferrari{"F40", false, 0}
 	carro1.ligarTurbo()
+	carro1.SetVelocidadeAtual(200)
 
 	var carro2 esportivo = &ferrari{"F40", false, 0}
 	carro2.ligarTurbo()
