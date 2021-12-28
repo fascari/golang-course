@@ -14,13 +14,13 @@ type usuario struct {
 }
 
 func main() {
-	db, err := sql.Open("mysql", "root:123456@/cursogo")
+	db, err := sql.Open("mysql", "root:abc,1234@/cursogo")
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
 
-	rows, _ := db.Query("select id, nome from usuarios where id > ?", 3)
+	rows, _ := db.Query("select id, nome from usuarios where id > ?", 1)
 	defer rows.Close()
 
 	for rows.Next() {
