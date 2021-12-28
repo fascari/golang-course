@@ -25,9 +25,9 @@ func main() {
 	pedido := pedido{
 		userID: 1,
 		itens: []item{
-			item{produtoID: 1, qtde: 2, preco: 12.10},
-			item{2, 1, 23.49},
-			item{11, 100, 3.13},
+			{produtoID: 1, qtde: 2, preco: 12.10},
+			{2, 1, 23.49},
+			{11, 100, 3.13},
 		},
 	}
 
